@@ -32,7 +32,7 @@
     elemToType.innerHTML = typedText;
 
     // Position the cursor at the beginning
-    var cursor = "";
+    
 
 
     // Display the cursor & flashing
