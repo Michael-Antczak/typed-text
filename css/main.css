@@ -55,11 +55,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
 h1 {
     text-align: center;
     margin-top: 3em;
+    border: 1px solid red;
+}
+
+.no-seenu {
+    display : none;
 }
 
 

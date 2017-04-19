@@ -1,16 +1,30 @@
 (function() {
     
     // Settings for the script: speed, etc. 
+    var settings = {
 
+    }
 
     // Find a get the element with id ="typed-text"
-
+    var elemToType = document.getElementById("typed-text");
+    var textToType = elemToType.innerHTML;
 
     // Hide the text
-
+    elemToType.classList.add("no-seen");
 
     // Split text into single characters
-    // Wrap into span element
+    var splitText = textToType.split('');
+
+    // Wrap into span element every character
+    var spanBegin = "<span>";
+    var spanEnd = "</span>";
+
+    var typedText = "";
+    // ADD LOOP HERE TO CREATE THE
+    typedText = spanBegin + element + spanEnd;
+    console.log();
+
+
     // Add default class "no-seen" to hide characters (will use "seen" class too?)
 
 
