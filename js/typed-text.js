@@ -12,23 +12,27 @@
     // Hide the text
     elemToType.classList.add("no-seen");
 
-    // Split text into single characters
-    var splitText = textToType.split('');
+    // Split text into single characters - ARRAY
+    var splitTextArray = textToType.split('');
 
     // Wrap into span element every character
-    var spanBegin = "<span>";
+    var spanBegin = "<span class=\"no-seen\">";
     var spanEnd = "</span>";
 
-    var typedText = "";
-    // ADD LOOP HERE TO CREATE THE
-    typedText = spanBegin + element + spanEnd;
-    console.log();
+    // Hold text after transformation and add cursor
+    var typedText = "<span id=\"cursor\">|</span>";
 
+    // Loop over the elements and create the wrap with span element
+    // Add no-seen class
+    splitTextArray.forEach(function(item, index, arr) {
+        typedText += spanBegin + item + spanEnd;
+    });
 
-    // Add default class "no-seen" to hide characters (will use "seen" class too?)
-
+    // Insert typedText into DOM
+    elemToType.innerHTML = typedText;
 
     // Position the cursor at the beginning
+    var cursor = "";
 
 
     // Display the cursor & flashing
